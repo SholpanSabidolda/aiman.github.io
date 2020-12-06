@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel…
+[04:28, 12/7/2020] Aiman: <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&amp;apikey=fcb48b6e-e045-4e5f-9c29-fb61b52f6bab" type="text/javascript"></script>
+        <script src="mapbasics.js" type="text/javascript"></script>
+
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 500px;
+        width:100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+   
+  <title></title>
+  <style >
+    
+    .image1{
+      display: flex;
+      padding: 10px;
+      margin: 5px;
+      flex-flow: row;
+      justify-content: space-around;
+
+    }
+    @media(max-width:1000px){
+      body{
+        background-color: grey;
+      }
+    }
+    @media(max-width:600px){
+      
+      label{
+        display: block;
+        cursor: pointer;
+      }
+    }
+    #text_1{
+      font-size: 30px;
+      font-style:  italic;
+      width:172;
+      height: 72;
+      font-color:white;
+            text-align: center;
+      
+
+    }
+    #toggle{
+      display: none;
+    }
+    @media(min-width: 300px){
+      label{
+        display: block;
+        cursor: pointer;
+      }
+      .container{
+        
+        padding-top: 60px;
+        text-align: center;
+        display: block;
+        font-size: 30px;
+
+      }
+      .container div{
+        border-top: 1px #a03f1c;
+        padding: 10px 0;
+      }
+      
+    #toggle:checked +.container{
+       display: none;
+    }
+    }
+
+    .nav{
+      float: left;
+      display: flex;
+      flex-flow: row;
+
+    }
+    label{
+      margin: 8px 0 0 20px;
+      font-size: 30px;
+    }
+    @media(max-width: 700px){
+      
+      
+      label{
+        display: block;
+        cursor: pointer;
+
+      }
+      .container{
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .container div{
+        border-top: 1px solid grey;
+      }
+
+
+    }
+  
+ .slider-spot__slide-content {
+    margin: 0 auto;
+}
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: grey;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px)
+.layout-header__center-right {
+    padding-left: 16px;
+
+}
+
+
+.layout-header_center, .layout-header_center-right {
+    min-width: 0;
+}
+.layout-header__center-right {
+    align-items: right;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 16px;
+}
+h2{
+  text-align: center;
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#id {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#id:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.o1{
+  text-decoration: none;
+}
+
+.container89 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+   
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+  
+
+
+
+</head>
+<body >
+  <script >
+    ymaps.ready(init);
+
+function init() {
+    // Creating the map.
+    var myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 10
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+    // Creating a circle.
+    var myCircle = new ymaps.Circle([
+        // The coordinates of the center of the circle.
+        [55.76, 37.60],
+        // The radius of the circle in meters.
+        10000
+    ], {
+        /**
+         * Describing the properties of the circle.
+         * The contents of the balloon.
+         */
+        balloonContent: "Radius of the circle: 10 km",
+        // The contents of the hint.
+        hintContent: "Move me"
+    }, {
+        /**
+         * Setting the circle options.
+         * Enabling drag-n-drop for the circle.
+         */
+        draggable: true,
+        /**
+         * Fill color.
+         * The last byte (77) defines transparency.
+         * The transparency of the fill can also be set using the option "fillOpacity".
+         */
+        fillColor: "#DB709377",
+        // Stroke color.
+        strokeColor: "#990066",
+        // Stroke transparency.
+        strokeOpacity: 0.8,
+        // The width of the stroke in pixels.
+        strokeWidth: 5
+    });
+
+    var myCircle1 = new ymaps.Circle([
+        // The coordinates of the center of the circle.
+        [55.70, 37.66],
+        // The radius of the circle in meters.
+        5000
+    ], {
+        /**
+         * Describing the properties of the circle.
+         * The contents of the balloon.
+         */
+        balloonContent: "Radius of the circle: 10 km",
+        // The contents of the hint.
+        hintContent: "Move me"
+    }, {
+        /**
+         * Setting the circle options.
+         * Enabling drag-n-drop for the circle.
+         */
+        draggable: true,
+        /**
+         * Fill color.
+         * The last byte (77) defines transparency.
+         * The transparency of the fill can also be set using the option "fillOpacity".
+         */
+        fillColor: "#bff8c8",
+        // Stroke color.
+        strokeColor: "#1aff1a",
+        // Stroke transparency.
+        strokeOpacity: 0.8,
+        // The width of the stroke in pixels.
+        strokeWidth: 5
+    });
+
+
+
+
+
+
+
+
+    placemark = new ymaps.Placemark([55.8, 37.72], {
+            iconContent: "Get the address",
+            hintContent: "Drag the placemark and click to see the address"
+        }, {
+            // Disabling the replacement of the conventional balloon with the balloon panel.
+            balloonPanelMaxMapArea: 0,
+            draggable: "true",
+            preset: "islands#blueStretchyIcon",
+            // Making the balloon open even if there is no content.
+            openEmptyBalloon: true
+        });
+
+    /**
+     * Handling the event of opening the balloon on the geo object:
+     * begin loading data, then updating its contents.
+     */
+    placemark.events.add('balloonopen', function (e) {
+        placemark.properties.set('balloonContent', "Loading data...");
+
+        // Imitating a delay when loading data (for demonstration purposes).
+        setTimeout(function () {
+            ymaps.geocode(placemark.geometry.getCoordinates(), {
+                results: 1
+            }).then(function (res) {
+                var newContent = res.geoObjects.get(0) ?
+                        res.geoObjects.get(0).properties.get('name') :
+                        'Couldn\'t detect address.';
+
+                // Setting the new content of the balloon in the corresponding placemark property.
+                placemark.properties.set('balloonContent', newContent);
+            });
+        }, 1500);
+    });
+
+    // Adding the circle to the map.
+    myMap.geoObjects.add(myCircle);
+    myMap.geoObjects.add(myCircle1);
+    myMap.geoObjects.add(placemark);
+
+}
+
+
+  </script>
+  <h2 onclick="window.location.reload()" > BRAND</h2>
+  <div>
+  <div class="nav">
+    <label for="toggle" >&#9776;</label>
+    
+  </div>
+  <input type="checkbox" name="" id="toggle">
+  <div class="container">
+    
+    <div id="ki1" onclick="change(this)" >WOMAN</div>
+    <div id="li2" onclick="change(this)">MEN</div>
+    <div id="li3" onclick="change(this)">KIDS</div>
+    <div id="li4" ><a class="o1" href="#map">CONTACTS</a></div>
+    
+
+  </div>
+  <div class="layout-header__center-right">
+    <button onclick="moveTo()">LOG IN</button>
+    
+  </div>
+  <script >
+    function moveTo(){
+      var a=document.getElementById("tr");
+       button.href="#tr";
+    }
+  </script>
+  <div class="container1">
+  <img id="im1" class="media-image_image media_wrapper--media" alt="" src="https://static.zara.net/photos///contents/mkt/spots/aw20-north-new-in-woman/subhome-xmedia-46//w/730/landscape_0.jpg?ts=1605274178928" width="100%" height="1125px">
+  <div class="centered">
+    <h2 id ="obj1"class="slider-spot__slide-title" style="color:#ffffff">NEW IN</h2>
+    <div class="slider-spot__slide-subtitle" style="color:#ffffff">
+      <p id="text_1">Explore this week's latest womenswear pieces of the season curated for you</p>
+      <p id="p_1">Autumn Winter Woman Collection</p>
+    </div>
+    <button class="button button--secondary button--small slider-spot__slide-button" style="border-color:#ffffff;color:#dc9c9c">VIEW</button>
+  </div>
+</div>
+<div class="container1">
+  <img  id ="im2" class="media-image_image media_wrapper--media" alt="" src="https://static.zara.net/photos///contents/mkt/spots/aw20-north-collection-woman/subhome-xmedia-46//w/1380/landscape_0.jpg?ts=1605272005240" width="100%" height="1125px">
+  <div class="centered">
+    <h2 id="obj2" class="slider-spot__slide-title" style="color:#ffffff">COLLECTION</h2>
+    <div class="slider-spot__slide-subtitle" style="color:#ffffff">
+      <p id="text_2">Explore this week's latest womenswear pieces of the season curated for you</p>
+      <p id="p_2">Autumn Winter Woman Collection</p>
+    </div>
+    <button class="button button--secondary button--small slider-spot__slide-button" style="border-color:#ffffff;color:#dc9c9c">VIEW</button>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="container1">
+<img id="im3" class="media-image_image media_wrapper--media" alt="" src="https://static.zara.net/photos///contents/mkt/spots/aw20-north-join-life-woman/subhome-xmedia-46//w/1380/landscape_0.jpg?ts=1605180392154" width="100%" height="1125px">
+<div class="centered">
+  <h2 id="obj3" class="slider-spot__slide-title" style="color:#ffffff">JOIN LIFE</h2>
+  <div class="slider-spot__slide-subtitle" style="color:#ffffff">
+      <p id="text_3">Working on different programmes to reduce the environmental impact of our products</p>
+      <p id="p_3"> AUTUMN </p>
+    </div>
+    <button class="button button--secondary button--small slider-spot__slide-button" style="border-color:#ffffff;color:#dc9c9c">VIEW</button>
+
+</div>
+</div>
+<div class="container1">
+  <img id="im4" class="media-image_image media_wrapper--media" alt="" src="https://static.zara.net/photos///contents/mkt/spots/aw20-north-shoes-and-bags-kids/subhome-xmedia-46//w/738/landscape_0.jpg?ts=1605276993915" width="100%" height="1125px">
+  <div class="centered">
+    <h2  id =" obj4"  class="slider-spot__slide-title" style="color:#ffffff">SHOES &amp; BAGS</h2>
+    <div class="slider-spot__slide-subtitle" style="color:#ffffff"><p>Explore the new collection of Shoes &amp; Bags</p>
+      <p id="text_4">Autumn Winter Kids Collection</p></div>
+      <p id =p_4>KIDS</p>
+  </div>
+    <h1>Hey!We are locating here</h1>
+
+  
+    <div id="map" ></div>
+    <input type="button" id="destroyButton" value="Delete map"/>
+  
+
+  <script >
+    
+  
+    function change(element){
+    var a= element.innerHTML;
+    switch(a){
+      case "WOMAN":
+
+      document.getElementById("im1").src="https://static.zara.net/photos///rw-center/2020/I/0/1/p/8490/242/700/4/w/692/8490242700_1_1_1.jpg?ts=1605274348409 " ;
+      
+
+      document.getElementById("im2").src=" https://static.zara.net/photos///2020/I/0/1/p/3046/315/811/2/w/342/3046315811_1_1_1.jpg?ts=1603101629925";
+
+      document.getElementById("obj1").innerHTML="";
+
+      document.getElementById("text_1").innerHTML="JACQUARD DRESSDETAIL";
+      document.getElementById("p_1").innerHTML=" 79,990.00 KZT";
+      document.getElementById("obj2").innerHTML="";
+      document.getElementById("text_2").innerHTML=" DRESSDETAIL";
+      document.getElementById("p_2").innerHTML=" 99.000 KZT";
+
+      document.getElementById("im3").src="https://static.zara.net/photos///rw-center/2021/V/0/1/p/5320/712/806/3/w/700/5320712806_1_1_1.jpg?ts=1605613271445" ;
+            document.getElementById("obj3").innerHTML="";
+            document.getElementById("text_3").innerHTML=" OVERSIZED PUFFER COAT";
+            document.getElementById("p_3").innerHTML=" 29.990 KZT";
+
+document.getElementById("im4").src="https://static.zara.net/photos///2020/I/0/1/p/8404/298/800/3/w/346/8404298800_1_1_1.jpg?ts=1603963720484";
+document.getElementById("obj4").innerHTML="";
+document.getElementById("text_4").innerHTML="COMBINED FAUX LEATHER COAT";
+document.getElementById("p_4").innerHTML="29.990KZT";
+
+
+      
+
+      break;
+      case "MEN":
+      document.getElementById("im1").src="https://static.zara.net/photos///2020/I/1/2/p/2229/620/100/2/w/167/2229620100_1_1_1.jpg?ts=1603268361318";
+      document.getElementById("im2").src="https://static.zara.net/photos///2020/I/0/2/p/3039/300/707/2/w/167/3039300707_6_1_1.jpg?ts=1603790355518";
+
+      document.getElementById("text_1").innerHTML="MEN";
+      document.getElementById("p_1").innerHTML="59990KZT";
+
+      document.getElementById("im3").src="https://static.zara.net/photos///2020/I/0/2/p/3920/316/505/22/w/169/3920316505_2_9_1.jpg?ts=1605099155657";
+      document.getElementById("obj3").innerHTML="";
+      document.getElementById("text_3").innerHTML="FRINGED SCARF";
+      document.getElementById("p_3").innerHTML=" 12.990 KZT";
+
+       document.getElementById("im4").src="https://static.zara.net/photos///2020/I/0/2/p/3332/305/401/73/w/169/3332305401_2_1_1.jpg?ts=1605198956777";
+       document.getElementById("obj4").innerHTML="";
+
+       document.getElementById("text_4").innerHTML="COTTON CARDIGAN";
+       document.getElementById("p_4").innerHTML="22.990KZT";
+      break;
+      case "KIDS":
+      document.getElementById("im1").src="https://static.zara.net/photos///2020/I/0/3/p/5854/614/406/2/w/342/5854614406_1_1_1.jpg?ts=1598346905932";
+            
+      document.getElementById("text_1").innerHTML="KIDS";
+      document.getElementById("p_1").innerHTML="BASIC BLUE CORDUROY PINAFORE DRESSDETAILS 7,990.00 KZT";
+      document.getElementById("im2").src="https://static.zara.net/photos///2020/I/M/1/p/0000/000/672/2/w/692/0000000672_9_1_1.jpg?ts=1592826935016";
+      document.getElementById("p_1").innerHTML="JACQUARD DRESSDETAILn 7,990.00 KZT";
+
+            document.getElementById("im3").src="https://static.zara.net/photos///2020/I/0/3/p/5350/528/620/2/w/346/5350528620_1_1_1.jpg?ts=1603992776426";
+
+            document.getElementById("obj3").innerHTML="";
+            document.getElementById("text_3").innerHTML="CONTASTED TULLE DRESS";
+            document.getElementById("p_3").innerHTML=" 9.990KZT";
+ 
+ document.getElementById("im4").src="https://static.zara.net/photos///2020/I/0/3/p/5992/583/450/202/w/700/5992583450_9_1_1.jpg?ts=1604918178309";
+ document.getElementById("obj4").innerHTML="";
+ document.getElementById("text_4").innerHTML="PREMIUM FEATHER DOWN JACKET";
+ document.getElementById("p_4").innerHTML="23.990KZT";
+
+
+      break;
+      case "CONTACTS":
+      document.getElementById("im1").id="#map";
+      break;
+
+
+      
+
+    }
+  }
+</script>
+<script>
+
+</script>
+  
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer" id="tr">
+    <img alt="Face expression of a woman - smiling. ... | Stock vector | Colourbox" class="n3VNCb" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30200117.jpg" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 100px; height: 150.07px; margin: 20.1648px 0px;">
+  </div>
+
+  <div class="container89">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button id ="id"type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div   class="container89" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+</body>
+</html>
